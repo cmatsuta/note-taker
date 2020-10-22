@@ -27,6 +27,7 @@ module.exports = function(app) {
         req.body.id = uuidv4();
         noteData.push(req.body);
         writeNote(noteData);
+        // console.log(noteData);
         res.json(req.body);
     });
 
