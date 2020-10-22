@@ -1,1 +1,3 @@
 # note-taker
+
+install uuid
