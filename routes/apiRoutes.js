@@ -33,7 +33,7 @@ module.exports = function(app) {
 
     // API DELETE request
     app.delete("/api/notes/:id", function (req, res){
-        const id = req.param.id.toString();
+        const id = req.params.id;
         for(i=0; i < noteData.length; i++){
             // if id matches, delete note
             if(noteData[i].id == id){
